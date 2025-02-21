@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <title>Creating Effects with CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="drop">
+                <a href="#">Images</a>
+                <div class="rollover-menu">
+                    <a href="#image1">Image1</a>
+                    <a href="#image2">Image2</a>
+                    <a href="#image3">Image3</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!--IMAGES-->
+    <section>
+        <!--IMAGE ONE-->
+        <div class="image-container" id="image1">
+            <img src="images/image1.jpeg" alt="">
+            <div class="overlay"></div>
+        </div>
+        <!--IMAGES TWO-->
+        <div class="image-container zoom" id="image2">
+            <img src="images/image2.jpeg" alt="">
+        </div>
+        <!--IMAGES THREE-->
+        <div class="image-container" id="image3">
+            <div class="circle">
+                <img src="images/image3.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="footer-text">
+            <p>The Tech Academy &copy;</p>
+        </div>
+    </footer>
+</body>
+</html>

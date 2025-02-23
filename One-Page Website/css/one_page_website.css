@@ -1,0 +1,256 @@
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+/*NAVBAR*/
+ul {
+  /* border: 1px solid black; */
+  display: flex;
+  list-style-type: none;
+  background-color: rgb(101, 205, 239);
+  height: 60px;
+  margin: -10px -10px 20px -10px;
+  border-bottom: 5px solid yellow;
+  box-shadow: 0 3px 15px 0 yellowgreen;
+  align-items: center;
+  justify-content: space-around;
+}
+
+a {
+  /* border: 1px solid black; */
+  display: block;
+  text-decoration: none;
+  width: 200 px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: whitesmoke;
+}
+
+@media screen and (max-width: 1000px) {
+  ul {
+    padding-left: 15px;
+    justify-content: flex-start;
+  }
+
+  a {
+    width: 100px;
+    margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  ul {
+    height: 85px;
+    padding-left: 15px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+/*HEADER*/
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 80px;
+  color: rgb(101, 205, 239);
+  text-align: center;
+}
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: blue;
+}
+
+/*PROMO VIDEO*/
+#video {
+  border: 3px solid yellow;
+  box-shadow: 5px 8px 16px 0 yellowgreen;
+  width: 800px;
+  height: 450px;
+  margin: 0 auto 100px;
+}
+
+/*CAR BRENDS*/
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 25px;
+  color: rgb(101, 205, 239);
+}
+
+h3 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  /* border: 2px solid black; */
+  font-size: 30px;
+  color: whitesmoke;
+  margin: 10px auto;
+}
+
+.container {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container div {
+  position: relative;
+  border: 3px solid yellow;
+  box-shadow: 5px 5px 10px 0 yellowgreen;
+  display: block;
+  width: 30%;
+  float: left;
+  margin: 20px auto;
+  background-color: rgb(101, 205, 239);
+}
+
+.container div:hover {
+  top: -15px;
+  cursor: pointer;
+}
+
+.container div img {
+  /* border: 2px solid black; */
+  width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+  h3 {
+    transform: scale(0.8);
+  }
+
+  .container div img {
+    transform: scale(0.8);
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 812px) {
+  #mercedes_benz h3 {
+    margin-bottom: -25px;
+  }
+}
+
+#audi img {
+  margin-top: -20px;
+}
+
+#mercedes_benz img {
+  margin-top: -7px;
+}
+
+/*CONTACT FORM*/
+form {
+  display: table;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form input {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: rgb(101, 205, 239);
+  color: whitesmoke;
+  border: 2px solid yellow;
+  box-shadow: 5px 5px 10px 0 yellowgreen;
+  caret-color: blue;
+  border-radius: 5px;
+  padding: 3px 3px 3px 10px;
+  margin: 10px 15px 10px 0;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: whitesmoke;
+}
+
+form input:focus,
+textarea:focus {
+  outline: none;
+}
+
+textarea {
+  width: 97.5%;
+  height: 200px;
+  margin-top: 10px;
+  padding: 5px 12px 12px 10px;
+  box-sizing: border-box;
+  resize: both;
+  background-color: rgb(101, 205, 239);
+  border: 3px solid yellow;
+  box-shadow: 5px 5px 10px 0 yellowgreen;
+  caret-color: blue;
+  border-radius: 5px;
+  font-family: "Courier New", Courier, monospace;
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+input[type="submit"] {
+  background-color: rgb(0, 137, 182);
+  box-shadow: none;
+  border: 2px solid rgb(0, 137, 182);
+  border-radius: 35px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: 20px;
+  margin-top: 15px;
+  padding: 15px 20px;
+  color: whitesmoke;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: yellow;
+  color: rgb(0, 137, 182);
+  border: 2px solid rgb(0, 137, 182);
+}
+
+/*FOOTER*/
+footer {
+  align-items: center;
+  margin: 0 -8px -8px -8px;
+  background-color: rgb(101, 205, 239);
+  border-top: 5px solid yellow;
+}
+
+table {
+  width: 100%;
+  height: 40px;
+}
+
+td {
+  width: 33%;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 1000px) {
+  td {
+    font-size: 18px;
+  }
+}

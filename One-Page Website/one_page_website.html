@@ -7,6 +7,7 @@
     <meta name="description" content="Auto parts store">
     <title>Auto parts store</title>
     <link rel="stylesheet" href="css/one_page_website.css">
+    <script src="js/one_page_website.js" defer></script>
 </head>
 
 <body>
@@ -84,6 +85,110 @@
         </div>
     </section>
 
+    <!--LIGHTBOX-->
+    <!--Thumbnail images to open the lightbox-->
+    <section>
+        <h2>Cars for rent</h2>
+        <div class="row">
+            <div class="column">
+                <img src="images/BMW-3-Series.jpg" alt=" picture" onclick="openLightbox();currentSlide(1)">
+            </div>
+
+            <div class="column">
+                <img src="images/Chevrolet-Impala.jpg" alt=" picture" onclick="openLightbox();currentSlide(2)">
+            </div>
+
+            <div class=" column">
+                <img src="images/Honda-Civic.jpg" alt=" picture" onclick="openLightbox();currentSlide(3)">
+            </div>
+
+            <div class=" column">
+                <img src="images/Nissan-Altima.jpg" alt=" picture" onclick="openLightbox();currentSlide(4)">
+            </div>
+
+            <div class=" column">
+                <img src="images/Subaru-Outback.jpg" alt=" picture" onclick="openLightbox();currentSlide(5)">
+            </div>
+
+            <div class=" column">
+                <img src="images/Toyota-Camry.jpg" alt=" picture" onclick="openLightbox();currentSlide(6)">
+            </div>
+        </div>
+
+        <!--The lightbox-->
+        <div class="lightbox" id="myLightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <div class="content">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="images/BMW-3-Series.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="images/Chevrolet-Impala.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="images/Honda-Civic.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="images/Nissan-Altima.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="images/Subaru-Outback.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="images/Toyota-Camry.jpg" style="width:100%">
+                </div>
+
+                <!--Next/Previous controls-->
+                <a class="prev" onclick="showAnotherSlide(-1)">&#10094;</a>
+                <a class="next" onclick="showAnotherSlide(1)">&#10095;</a>
+
+                <!--Caption text-->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="lightbox-row">
+                <div class="lightbox-column">
+                    <img class="demo" src="images/BMW-3-Series.jpg" onclick="currentSlide(1)" alt="BMW 3-Series">
+                </div>
+
+                <div class="lightbox-column">
+                    <img class="demo" src="images/Chevrolet-Impala.jpg" onclick="currentSlide(2)"
+                        alt="Chevrolet Impala">
+                </div>
+
+                <div class="lightbox-column">
+                    <img class="demo" src="images/Honda-Civic.jpg" onclick="currentSlide(3)" alt="Honda Civic">
+                </div>
+
+                <div class="lightbox-column">
+                    <img class="demo" src="images/Nissan-Altima.jpg" onclick="currentSlide(4)" alt="Nissan Altima">
+                </div>
+
+                <div class="lightbox-column">
+                    <img class="demo" src="images/Subaru-Outback.jpg" onclick="currentSlide(5)" alt="Subaru Outback">
+                </div>
+
+                <div class="lightbox-column">
+                    <img class="demo" src="images/Toyota-Camry.jpg" onclick="currentSlide(6)" alt="Toyota Camry">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--CONTACT FORM-->
     <section>
         <div>
@@ -91,7 +196,7 @@
                 us so we can help you find exactly what you need.</h2>
             <div>
                 <form action="">
-                    <input type="text" placeholder="First Name">
+                    <input type=" text" placeholder="First Name">
                     <input type="text" placeholder="Last Name"><br>
                     <input type="email" placeholder="Email">
                     <input type="tel" placeholder="Phone Number"><br>

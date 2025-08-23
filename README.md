@@ -1,5 +1,5 @@
 # HTML-AND-CSS-PROJECTS
-This is a display of sample websites that I made using HTML and CSS.
+This repository contains a collection of HTML and CSS coding projects completed as part of The Tech Academy's Software Developer Bootcamp.
 
 ## Projects
 * Academy Cinemas
